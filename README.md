@@ -24,7 +24,7 @@ The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https
 
 # Developing in Vagrant
 
-If you do have have the necessary development tools, you have the option to build and development in a Vagrant environment.
+If you do not have have the necessary development tools, the option to build and development in a Vagrant environment is available.
 
 1. Execute: `vagrant up`
 
