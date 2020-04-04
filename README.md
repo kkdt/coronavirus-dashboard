@@ -6,7 +6,7 @@
 
 # Overview
 
-The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Cronovirus-related datasets and news.
+The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Coronavirus-related datasets and news.
 
 # Releases
 
