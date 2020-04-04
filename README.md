@@ -6,17 +6,17 @@
 
 # Overview
 
-The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</post>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Cronovirus-related datasets and news.
+The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Cronovirus-related datasets and news.
 
 # Releases
 
-| Release                                   | Status                                              |
-| :---                                      | :---                                                |
-| <a href="docs/0.1-release.md">0.1</a>     | ![alt text](doc/inprogress.png "In progress...")    |
+| Release                       | Status                                              |
+| :---                          | :---                                                |
+| [0.1](doc/0.1-release.md)    | ![alt text](doc/inprogress20.png "In progress...")  |
 
 # Quick Start
 
-1. 'yarn', Install dependencies for this project.
+1. `yarn`, Install dependencies for this project.
 
 2. `yarn build`, Builds the app for production to the `build` folder, optimizing the build for the best performance.
 
@@ -38,7 +38,7 @@ If you do have have the necessary development tools, you have the option to buil
 
 1. `yarn clean`: Remove any built artifacts.
 
-2. `yarn install`: Install dependencies for this project.
+2. `yarn` and `yarn install`: Install dependencies for this project.
 
 3. `yarn build`: Builds the extension for production to the `build` folder, optimizing the build for the best performance.
 
@@ -52,7 +52,7 @@ If you do have have the necessary development tools, you have the option to buil
 
 # References
 
-1. <a href="https://covid-19-apis.postman.com/">Coronavirus</a> APIs provided by <a href="https://www.postman.com/">Postman</a>
+1. <a href="https://covid-19-apis.postman.com/">Coronavirus</a> APIs collected by <a href="https://www.postman.com/">Postman</a>
 
 2. <a href="https://www.iconfinder.com/iconsets/logos-brands-3">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
 
