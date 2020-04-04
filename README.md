@@ -1,4 +1,4 @@
-# template: chrome reactjs extension
+# cronavirus dashboard
 
 > When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
 
@@ -6,19 +6,21 @@
 
 # Overview
 
-This is a **TEMPLATE** project for creating a Google Chrome Browser extension using ReactJS. Modifications to the standard `create-react-app` include the following.
+The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</post>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Cronovirus-related datasets and news.
 
-* icons
+# Releases
 
-* additional yarn scripts
-
-* `manifest.json` to follow <a href="https://developer.chrome.com/extensions/manifest">Google Manifest</a>
+| Release                                   | Status                                              |
+| :---                                      | :---                                                |
+| <a href="docs/0.1-release.md">0.1</a>     | ![alt text](doc/inprogress.png "In progress...")    |
 
 # Quick Start
 
-1. `yarn build`, Builds the app for production to the `build` folder, optimizing the build for the best performance.
+1. 'yarn', Install dependencies for this project.
 
-2. Add the <a href="https://developer.chrome.com/extensions/getstarted">Google Chrome Extension</a> by pointing to the `build` folder from Step 1.
+2. `yarn build`, Builds the app for production to the `build` folder, optimizing the build for the best performance.
+
+3. Add the <a href="https://developer.chrome.com/extensions/getstarted">Google Chrome Extension</a> by pointing to the `build` folder from Step 1.
 
 # Developing in Vagrant
 
@@ -36,20 +38,24 @@ If you do have have the necessary development tools, you have the option to buil
 
 1. `yarn clean`: Remove any built artifacts.
 
-2. `yarn build`: Builds the extension for production to the `build` folder, optimizing the build for the best performance.
+2. `yarn install`: Install dependencies for this project.
 
-3. `yarn dist`: Package the extension into a tar.gz file to the `dist` folder.
+3. `yarn build`: Builds the extension for production to the `build` folder, optimizing the build for the best performance.
 
-4. `yarn test`: Launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
+4. `yarn dist`: Package the extension into a tar.gz file to the `dist` folder.
 
-5. `yarn eject`: This is a one-way operation - once you `eject`, you can not go back! (see notes below)
+5. `yarn test`: Launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
+
+6. `yarn eject`: This is a one-way operation - once you `eject`, you can not go back! (see notes below)
 
 > If you are not satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project. Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you are on your own. You do not have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you could not customize it when you are ready for it.
 
 # References
 
-1. A tutorial from <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">Hu Chen</a>
+1. <a href="https://covid-19-apis.postman.com/">Coronavirus</a> APIs provided by <a href="https://www.postman.com/">Postman</a>
 
-2. https://github.com/facebook/create-react-app
+2. <a href="https://www.iconfinder.com/iconsets/logos-brands-3">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
 
-3. <a href="https://www.iconfinder.com/iconsets/social-media-and-payment">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
+3. https://gist.github.com/danharper/8364399
+
+4. Tutorial on Chrome extension background script by <a href="https://levelup.gitconnected.com/how-to-use-background-script-to-fetch-data-in-chrome-extension-ef9d7f69625d">Hu Chen</a>

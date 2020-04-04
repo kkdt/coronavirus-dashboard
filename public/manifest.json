@@ -1,16 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "template: reactjs app",
+  "name": "Coronavirus Dashboard",
   "author": "Thinh Ho",
   "version": "0.1",
-  "description": "Google Chrome new tab with reactjs application",
+  "description": "Coronavirus dashboard",
   "icons": {
-    "16": "images/template16.png",
-    "48": "images/template48.png",
-    "128": "images/template128.png"
+    "16": "images/corona16.png",
+    "48": "images/corona48.png",
+    "128": "images/corona128.png"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab", "storage"]
 }
