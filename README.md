@@ -1,4 +1,4 @@
-# cronavirus dashboard
+# coronavirus dashboard
 
 > When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
 
