@@ -1,18 +1,16 @@
 # coronavirus dashboard
 
-> When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
-
-![alt text](doc/template.png "Base reactjs application as a Chrome extension")
-
 # Overview
 
-The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard as a Google Chrome Browser extension when the user opens a new tab. The dashboard will consume the APIs that expose Coronavirus-related datasets and news.
+The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard view for Coronavirus-related information when the user opens a new tab for both [Google Chrome](doc/chrome.png) or Mozilla Firefox browsers (below).
+
+![alt text](doc/firefox.png "Firefox add-on")
 
 # Releases
 
 | Release                       | Status                                              |
 | :---                          | :---                                                |
-| [0.1](doc/0.1-release.md)    | ![alt text](doc/inprogress20.png "In progress...")  |
+| [0.1](doc/0.1-release.md)     | ![alt text](doc/inprogress20.png "In progress...")  |
 
 # Quick Start
 
@@ -54,7 +52,7 @@ If you do not have have the necessary development tools, the option to build and
 
 1. <a href="https://covid-19-apis.postman.com/">Coronavirus</a> APIs collected by <a href="https://www.postman.com/">Postman</a>
 
-2. <a href="https://www.iconfinder.com/iconsets/logos-brands-3">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
+2. <a href="https://www.iconfinder.com/icons/6002393/bacteria_corona_covid19_disease_microbe_virus_icon">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
 
 3. https://gist.github.com/danharper/8364399
 
