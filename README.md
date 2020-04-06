@@ -1,16 +1,12 @@
 # coronavirus dashboard
 
+> This project is currently a prototype, exploring [ReactJS](https://reactjs.org/) and [Material-UI](https://material-ui.com/).
+
 # Overview
 
 The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https://covid-19-apis.postman.com/">Internet</a>. This project aims at providing a dashboard view for Coronavirus-related information when the user opens a new tab for both [Google Chrome](doc/chrome.png) or Mozilla Firefox browsers (below).
 
 ![alt text](doc/firefox.png "Firefox add-on")
-
-# Releases
-
-| Release                       | Status                                              |
-| :---                          | :---                                                |
-| [0.1](doc/0.1-release.md)     | ![alt text](doc/inprogress20.png "In progress...")  |
 
 # Quick Start
 
