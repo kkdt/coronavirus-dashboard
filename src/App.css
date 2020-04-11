@@ -13,19 +13,35 @@
   }
 }
 
+.container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2147483647;
+  box-shadow: 0px 0px 5px #0000009e;
+}
+
+.topright {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
   color: white;
 
   position: fixed;
   top: 0px;
   right: 0px;
+
 
   /*width: 200px;*/
   /*height: 100%;*/

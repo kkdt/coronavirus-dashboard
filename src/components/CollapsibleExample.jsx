@@ -8,7 +8,8 @@ function CollapsibleExample() {
 
     return (
         <div>
-        <Toggle checked={expanded} onChange={evt => setExpanded(p => !p)}/>
+            <PrimaryButton onClick={ e => setExpanded(p => !p) }>Coronavirus</PrimaryButton>
+            {/*<Toggle checked={expanded} onChange={evt => setExpanded(p => !p)}/>*/}
         <Collapsible expanded={expanded}>
             <div className="mtl"><DefaultButton>Button 1</DefaultButton></div>
             <div className="mtl"><DefaultButton>Button 2</DefaultButton></div>
