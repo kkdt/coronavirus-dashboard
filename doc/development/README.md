@@ -9,3 +9,7 @@
 4. https://reactjs.org/docs/state-and-lifecycle.html
 
 5. https://reactjs.org/docs/composition-vs-inheritance.html
+
+6. https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
+
+7. [Hooks](07-hooks.md)

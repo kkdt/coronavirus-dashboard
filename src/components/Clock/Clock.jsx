@@ -1,44 +1,40 @@
-/*
- * https://reactjs.org/docs/state-and-lifecycle.html
- */
+// Clock.jxs (functional)
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
-class Clock extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            date: new Date()
-        };
-    }
+function Clock(props) {
+    const [counter, setCounter] = useState(0);
+    const [date, setDate] = useState(new Date());
 
-    render = () => (
-        <div>
-            {this.state.date.toLocaleTimeString()}<br/>
-        </div>
-    );
-
-    componentDidMount() {
-        this.timerID = setInterval(
-            () => this.tick(),
+    useEffect(() => {
+        console.log("Using effect....");
+        var _dateTimer = setInterval(
+            () => {
+                setDate(new Date());
+                setCounter(c => c + 1);
+            },
             1000
         );
-    }
+        // unmount routine
+        return (() => {
+            console.log("Unmounting the clock...");
+            clearInterval(_dateTimer);
+        });
+    },[]);
 
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
+    useEffect(() => {
+        console.log("Counter incremented: " + counter);
+    }, [counter]);
 
-    tick() {
-        // this.setState({
-        //     date: new Date()
-        // });
-        this.setState((state, props) => ({
-            counter: (state.counter | 0) + 1,
-            date: new Date()
-        }));
-        console.log("Counter: " + this.state.counter)
-    }
+    useEffect(() => {
+        console.log("Date changed: " + date);
+    }, [date]);
+
+    return (
+        <div>
+            {date.toLocaleTimeString()}<br/>
+        </div>
+    );
 }
 
-export default Clock
+export default Clock;

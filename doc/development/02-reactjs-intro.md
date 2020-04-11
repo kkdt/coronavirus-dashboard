@@ -30,8 +30,6 @@
 
 - Props are read-only; Whether you declare a component as a function or a class, it must never modify its own props.
 
-- 
-
 # References
 
 1. https://reactjs.org/docs/rendering-elements.html
