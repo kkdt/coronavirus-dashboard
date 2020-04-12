@@ -9,8 +9,14 @@
     "48": "images/corona48.png",
     "128": "images/corona128.png"
   },
-  "chrome_url_overrides": {
-    "newtab": "index.html"
+  "browser_action": {
+    "default_title": "Coronavirus Dashboard"
   },
-  "permissions": ["activeTab", "storage"]
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": ["activeTab"]
 }
