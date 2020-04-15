@@ -1,24 +1,24 @@
 import React from 'react';
-import './App.css';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import {ThemeProvider} from '@material-ui/core/styles';
+
+import {theme} from './components/core'
+import Clock from './components/Clock/Clock'
+import HeaderBar from "./components/HeaderBar/HeaderBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={process.env.REACT_APP_WEBSITE_LOGO} className="App-logo" alt="logo" />
-        <p>
-          {process.env.REACT_APP_WEBSITE_NAME}
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/kkdt/coronavirus-dashboard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      </header>
-    </div>
+      <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <div className="cvd">
+              <HeaderBar title={process.env.REACT_APP_WEBSITE_NAME} github={process.env.REACT_APP_GITHUB_URL} />
+              <header className="cvd-header">
+                  <img src={process.env.REACT_APP_WEBSITE_LOGO} className="cvd-logo" alt="logo" />
+                  <p/>
+                  <Clock />
+              </header>
+          </div>
+      </ThemeProvider>
   );
 }
 
