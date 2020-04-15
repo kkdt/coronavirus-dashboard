@@ -1,5 +1,5 @@
 import React from 'react';
-import Clock from "../Clock/Clock";
+import './DefaultContent.css'
 
 /**
  * Captures the default header content from reactjs 'create-app' command.
@@ -10,11 +10,12 @@ import Clock from "../Clock/Clock";
  */
 function DefaultContent(props) {
     return (
-        <header className="cvd-header">
-            <img src={props.title || process.env.REACT_APP_WEBSITE_LOGO} className="cvd-logo" alt="logo" />
-            <p/>
-            <Clock />
-        </header>
+        <div className="cvd-default-content">
+            <header className="cvd-header">
+                <img src={props.title || process.env.REACT_APP_WEBSITE_LOGO} className="cvd-logo" alt="logo" />
+                <p/>
+            </header>
+        </div>
     );
 }
 
