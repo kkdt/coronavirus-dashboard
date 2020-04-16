@@ -3,6 +3,7 @@ import React from "react";
 import HeaderBar from "../components/HeaderBar/HeaderBar";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import Link from "@material-ui/core/Link";
 import ListItem from "@material-ui/core/ListItem";
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import BarChartIcon from '@material-ui/icons/BarChart';
@@ -28,11 +29,10 @@ function ApplicationBarController(props) {
         var items = elements.map((value, index) => {
             var text = value.text;
             var item = value.item;
-            var handler = value.handler;
             return (
-                <ListItem onClick={handler} button>
+                <ListItem button>
                     {item}
-                    <ListItemText primary={text}/>
+                    <Link underline="none" color="inherit" to={value.route}><ListItemText primary={text}/></Link>
                 </ListItem>
             );
         });
@@ -48,11 +48,13 @@ function ApplicationBarController(props) {
         {
             "text":"Home",
             "item": <ListItemIcon><DashboardIcon/></ListItemIcon>,
+            "route":"/home",
             "handler": () => alert("Home")
         },
         {
             "text":"Reported Cases",
             "item": <ListItemIcon><BarChartIcon/></ListItemIcon>,
+            "route":"/reported",
             "handler": () => alert("Reported Cases")
         }
     ]);
