@@ -19,3 +19,5 @@
 8. [Styling Components](https://blog.bitsrc.io/5-ways-to-style-react-components-in-2019-30f1ccc2b5b)
 
 9. [Passing Data Between React Components](https://towardsdatascience.com/passing-data-between-react-components-parent-children-siblings-a64f89e24ecf)
+
+10. [Routing](https://medium.com/javascript-in-plain-english/routing-and-navigation-in-react-cffc26e8a389)
