@@ -12,7 +12,7 @@ export default function PageNotFound(props) {
     const message = props.pageNotFoundMessage || "Page Not Found";
 
     return (
-        <div>
+        <div className="cvd-page-not-found">
             <h1>404: {message}</h1>
         </div>
     );

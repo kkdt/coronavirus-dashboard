@@ -3,7 +3,7 @@ import React from "react";
 import HeaderBar from "../components/HeaderBar/HeaderBar";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import ListItem from "@material-ui/core/ListItem";
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import BarChartIcon from '@material-ui/icons/BarChart';
@@ -17,8 +17,10 @@ import BarChartIcon from '@material-ui/icons/BarChart';
  * @constructor
  * @link https://material-ui.com/guides/composition/
  */
-function ApplicationBarController(props) {
+function ApplicationHeaderController(props) {
     // const Greeting = ({ greeting }) => <h1>{greeting}</h1>;
+
+    const handleOpen = props.handleOpen || (value => console.log("Draw state", value))
 
     /**
      * Create a collection of <ListItem> from the passed-in elements array.
@@ -48,19 +50,20 @@ function ApplicationBarController(props) {
      */
     const actions = listItems(props.actions || [
         {
-            "text":"Home",
+            "text":"Navigation1",
             "item": <ListItemIcon><DashboardIcon/></ListItemIcon>,
-            "route":"/home"
+            "route":"/nav1"
         },
         {
-            "text":"Reported Cases",
+            "text":"Navigation2",
             "item": <ListItemIcon><BarChartIcon/></ListItemIcon>,
-            "route":"/reported"
+            "route":"/nav2"
         }
     ]);
 
     return (
-        <HeaderBar drawerWidth={props.drawerWidth}
+        <HeaderBar handleOpen={handleOpen}
+            drawerWidth={props.drawerWidth}
             title={props.title}
             github={props.github}
         >
@@ -68,4 +71,4 @@ function ApplicationBarController(props) {
         </HeaderBar>
     );
 }
-export default ApplicationBarController;
+export default ApplicationHeaderController;

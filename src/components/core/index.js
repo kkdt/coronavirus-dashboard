@@ -2,6 +2,7 @@
 
 import './core.css';
 import theme from "./theme";
+import actions from './actions'
 
 // https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories
-export {theme};
+export {theme, actions};
