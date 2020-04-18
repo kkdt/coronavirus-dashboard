@@ -1,15 +1,19 @@
 import React from 'react';
-
-import DefaultContentController from "./controllers/DefaultContentController";
+import {Switch} from "react-router-dom";
 import ReportedCasesController from "./controllers/ReportedCasesController";
 import ApplicationRoute from "./components/ApplicationRoute/ApplicationRoute";
-import PageNotFound from "./components/PageNotFound/PageNotFound";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import HomePage from "./pages/HomePage";
 
-const routes = [
-    <ApplicationRoute exact path="/" component={DefaultContentController}/>,
-    <ApplicationRoute path="/home" component={DefaultContentController}/>,
-    <ApplicationRoute path="/reported" component={ReportedCasesController}/>,
-    <ApplicationRoute component={PageNotFound} />
-];
+function AppRoutes(props) {
 
-export {routes};
+    return (
+        <Switch>
+            <ApplicationRoute exact path="/" component={HomePage}/>,
+            <ApplicationRoute path="/home" component={HomePage}/>,
+            <ApplicationRoute path="/reported" component={ReportedCasesController}/>,
+            <ApplicationRoute component={PageNotFound} />
+        </Switch>
+    );
+}
+export default AppRoutes;
