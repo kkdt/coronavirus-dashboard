@@ -22,6 +22,7 @@
     "build:dev": "NODE_ENV=dev INLINE_RUNTIME_CHUNK=false react-scripts build --debug ",
     "dist": "if [ -d build ]; then rm -rf dist/*.tar.gz && mkdir -p dist && cd build && tar czvf ../dist/coronavirus-dashboard-extension.tar.gz . && cd -; else echo '!!! No build detected !!!'; fi",
     "clean": "rm -rf build dist",
+    "package": "/bin/bash .yarn/scripts/package.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
