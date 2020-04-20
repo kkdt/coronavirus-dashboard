@@ -42,9 +42,3 @@
 
 13. (option 2) Removing relative paths in imports - https://medium.com/@ktruong008/absolute-imports-with-create-react-app-4338fbca7e3d
 
-# npm offline install
-
-- https://github.com/npm/npm/issues/1349
-
-- https://addyosmani.com/blog/using-npm-offline/
-

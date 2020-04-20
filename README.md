@@ -18,7 +18,24 @@ The COVID-19 pandemic in 2019 has created massive datasets on the <a href="https
 
 # Developing in Vagrant
 
-If you do not have have the necessary development tools, the option to build and development in a Vagrant environment is available.
+```shell script
+> cat /etc/redhat-release 
+CentOS Linux release 7.6.1810 (Core) 
+
+> yarn --version
+1.22.4
+
+> npm --version
+6.14.4
+
+> npx --version
+6.14.4
+
+> node --version
+v13.13.0
+```
+
+If you do not have have the necessary development tools (above), the option to build and development in a Vagrant environment is available.
 
 1. Execute: `vagrant up`
 

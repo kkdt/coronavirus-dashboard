@@ -13,7 +13,7 @@ function AppRoutes(props) {
             <ApplicationRoute path="/home" component={HomePage}/>,
             <ApplicationRoute path="/reported" component={ReportedCasesController}/>,
 
-            // Opening a new tab will default to this page
+            {/* Opening a new tab will default to this page */}
             <ApplicationRoute component={DefaultContent} />
         </Switch>
     );
